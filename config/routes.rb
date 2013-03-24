@@ -1,6 +1,7 @@
 RedditOnRails::Application.routes.draw do
   devise_for :users
   resources :links
+  resources :comments
 	resources :pages
   # The priority is based upon order of creation:
   # first created -> highest priority.

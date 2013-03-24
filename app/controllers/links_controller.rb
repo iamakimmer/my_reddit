@@ -8,7 +8,9 @@ class LinksController < ApplicationController
     @link = Link.new 
   end
   
-  def show
+ def show
+   @link = Link.find(params[:id])
+   @comment = Comment.new
   end
   
   
